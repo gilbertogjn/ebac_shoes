@@ -149,16 +149,21 @@ h2 {
         font-size: 28px;
     }
 
+    header h1 span {
+        display: block;
+    }
+
     h2 {
         font-size: 22px;
     }
 
     nav ul {
         display: block;
+        float: right;
     }
 
-    nav li {
-        float: right;
+    nav ul li {
+        display: block;
     }
 
     nav ul > li {
