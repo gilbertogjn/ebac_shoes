@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #4b4e6d;
+    color: #84dcc6;
+}
+
+section {
+    margin: 32px 0;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > .container h1 {
+    padding: 12px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #84dcc6;
+}
+
+#sobre {
+    margin: 32px 0;
+}
+
+h2 {
+    color: #4b4e6d;
+    border-bottom: 2px solid #84dcc6;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+#sobre > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+#sobre img {
+    width: 100%;
+    padding-right: 32px;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+}
+
+.grid-produtos article {
+    margin-bottom: 42px;
+}
+
+.grid-produtos img {
+    width: 100%;
+}
+
+.grid-produtos h3 {
+    margin: 18px 0;
+}
+
+.grid-produtos button {
+    margin-top: 18px;
+    padding: 10px 0;
+    width: 100%;
+    cursor: pointer;
+    background-color: #4b4e6d;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+}
+
+.grid-produtos button:hover {
+    color: #84dcc6;
+}
+
+#produtos {
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    #sobre > .container {
+        display: block;
+    }
+
+    #sobre img {
+        padding: 0;
+        margin-bottom: 12px;
+    }
+
+    .grid-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #sobre > .container {
+        display: block;
+    }
+
+    #sobre img {
+        padding: 0;
+        margin-bottom: 12px;
+    }
+
+    .grid-produtos {
+        display: block;
+    }
+
+    header > .container {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+    }
+
+    header h1 {
+        line-height: 90%;
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav li {
+        float: right;
+    }
+
+    nav ul > li {
+        margin-bottom: 6px;
+    }
+}
